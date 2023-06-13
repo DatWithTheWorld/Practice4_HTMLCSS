@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    #header{
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid black;
+        display: block;
+    }
+    span{
+        line-height: 40px; margin: 10px;
+    }
+    .ul1 > li {
+        display: inline-block;
+        line-height: 40px;
+    }
+    .ul1{
+        margin-left: 10px;
+        float: left;
+    }
+    .ul2 > li{
+        display: inline-block;
+        line-height: 40px;
+    }
+    .ul2{
+        float: right;
+    }
+    #content{
+        margin-top: 40px;
+    }
+    input{
+        width: 500px;
+        height: 30px;
+    }
+    .subinput{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .twoin > ul{
+        list-style-type: none;
+    }
+</style>
+
+<body>
+    <div id="header">
+      
+        <ul class="ul1">
+            <li>Web</li>
+            <li><a href="">Images</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="">Maps</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Shopping</a></li>
+            <li><a href="">Gmail</a></li>
+            <li><a href="">More</a></li>
+        </ul>
+        <ul class="ul2">
+            <li><a href="">Google</a></li>
+            <li><a href="">Search</a></li>
+            <li><a href="">Settings</a></li>
+            <li><a href="">Sign in</a></li>
+        </ul>
+    </div>
+    <div id="content">
+<center>
+    <img style="height: 90px; width: 500px;" src="https://logos-download.com/wp-content/uploads/2016/02/Google_Logo_2013.png" alt="">
+    <br>
+    <br>
+    <div class="subinput">
+        <input type="text">
+        <div class="twoin">
+            <ul style="float: left;">
+                <li><a href="">Advanced Search</a></li>
+                <li><a href="">Language Tools</a></li>
+            </ul>
+        </div>
+    </div>
+   <button class="button1">Google Search</button> <button class="button2">I'm Feeling Lucky</button>
+   <br>
+   <br>
+   <ul style="display: flex;list-style-type: none; text-align: center;
+   align-items: center;
+   justify-content: center;">
+    <li style="margin: 10px;"><a href="">Advertising Programs</a></li>
+    <li style="margin: 10px;"><a href="">Business Solutions</a></li>
+    <li style="margin: 10px;"><a href="">About Google</a></li>
+    <li style="margin: 10px;"><a href="">Go to Google Vietnam</a></li>
+   </ul>
+   <br>
+   <br>
+       @2009 <a href="">Pivacy</a>
+</center>
+
+    </div>
+    <script>
+        const button1 = document.querySelector(".button1");
+        const button2 = document.querySelector(".button2");
+      button1.addEventListener("click",()=>{
+         alert("Google is searching");
+      });
+      button2.addEventListener("click",()=>{
+        alert("I'm feeling lucky")
+      })
+     </script>
+</body>
+</html>

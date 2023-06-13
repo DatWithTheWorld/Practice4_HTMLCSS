@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cl1 > ul>li{
+list-style-type: upper-alpha;
+    }
+    .cl2>ul>li{
+        list-style-type: lower-roman;
+    }
+    .cl3>ul{
+        list-style-type: decimal;
+        
+    }
+    .cl3 > ul {
+  list-style-type: decimal;
+  counter-reset: my-counter 2;
+}
+
+.cl3 > ul > li {
+  list-style-type: none;
+}
+
+.cl3 > ul > li:before {
+  content: counter(my-counter) ". ";
+  counter-increment: my-counter;
+}
+</style>
+<body>
+    Các môn HK5-V2
+    <div class="cl1">
+        <ul>
+            <li>Chuyên đề 1</li>
+            <li>Thiết kế Web</li>
+            <li>Lập trình Java</li>
+        </ul>
+    </div>
+    Các môn HK5-V3
+    <div class="cl2">
+        <ul>
+            <li>Chuyên đề 1</li>
+            <li>Thiết kế Web</li>
+            <li>Lập trình Java</li>
+        </ul>
+    </div>
+    Các môn HK5-V4
+    <div class="cl3">
+        <ul style="list-style-type: decimal;" start="3">
+            <li>Chuyên đề 1</li>
+            <li>Thiết kế Web</li>
+            <li>Lập trình Java</li>
+        </ul>
+    </div>
+</body>
+</html>

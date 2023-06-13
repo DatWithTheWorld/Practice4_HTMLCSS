@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube Video Player</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 300px;
+			grid-gap: 20px;
+			padding: 20px;
+		}
+
+		.video {
+			position: relative;
+			padding-bottom: 56.25%;
+			height: 0;
+			overflow: hidden;
+		}
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+
+		.sidebar {
+			background-color: #f9f9f9;
+			padding: 20px;
+            display: flex;
+            flex-direction: column;
+		}
+
+		.video-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+		.video-list li {
+			margin-bottom: 10px;
+		}
+
+		.video-list li a {
+			display: block;
+			color: #333;
+			text-decoration: none;
+		}
+
+		.video-list li a:hover {
+			text-decoration: underline;
+		}
+
+		.video-list li img {
+			float: left;
+			margin-right: 10px;
+			width: 120px;
+			height: 90px;
+			object-fit: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/9W8CCe4e51A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+		<div class="sidebar">
+			<h2>Video Suggestions</h2>
+			<ul class="video-list">
+				<li>
+					<a href="#">
+						<img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Video Title">
+						Video Title
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Video Title">
+						Video Title
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Video Title">
+						Video Title
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Video Title">
+						Video Title
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Video Title">
+						Video Title
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Video Title">
+						Video Title
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<img src="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg" alt="Video Title">
+						Video Title
+					</a>
+				</li>
+				<!-- Add more video suggestions here -->
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul{
+        list-style-type: decimal;
+        
+    }
+    ul > li{
+        color: violet;
+    }
+    td{
+        color: gray;
+    }
+    ::placeholder{
+        opacity: 0.3;
+    }
+</style>
+<body>
+    <ul>
+        <li>Tell us about yourself ...
+             <table>
+                <tr>
+                    <td style="text-align: right;">My Name</td>
+                    <td><input type="text " placeholder="First Name">    <input placeholder="Last Name" type="text"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Gender</td>
+                    <td><select name="" id=""><option value="">-Select One-</option></select></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Birthday</td>
+                    <td><select name="" id=""><option value="">-Select Month-</option>  <input style="width: 80px; margin-left: 2px;" type="text" placeholder="Day"> <input placeholder="Year" style="width: 80px;" type="text"></select></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">I live in</td>
+                    <td><select style="width: 350px;" name="" id=""><option value="">VietNam</option></select></td>
+                </tr>
+             </table>
+        </li>
+        <li>Select an ID and password
+               <table>
+                <tr>
+                    <td style="text-align: right;">Yahoo! ID and Email</td>
+                    <td> <input style="width: 80px;" type="  "> @ <select name="" id=""><option value="">yahoo.com</option></select> <button>Check</button></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Password</td>
+                    <td><input type="text"> <meter max="4" id="password-strength"></meter> </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Re-type Password</td>
+                    <td><input type="text"></td>
+                </tr>
+               </table>
+
+        </li>
+        <li>In case you forget your ID or password ... 
+            <table>
+                <tr>
+                    <td style="text-align: right;">Altermate Email</td>
+                    <td><input style="width: 300px;" type="text"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">1. Security Question</td>
+                    <td><select style="width: 300px;" name="" id=""><option  value="">-Select One-</option></select></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Your  Answer</td>
+                    <td><input style="width: 300px;" type="text"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">2.Security Question</td>
+                    <td><select style="width: 300px;" name="" id=""><option  value="">-Select One-</option></select></td>
+
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Your Answer</td>
+                    <td><input style="width: 300px;" type="text"></td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+</body>
+</html>

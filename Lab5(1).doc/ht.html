@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.active a {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="noactive active"><a href="#">Trang Chủ</a></li>
+		<li class="noactive"><a href="#">Giới Thiệu</a></li>
+		<li class="noactive"><a href="#">Đại Học</a></li>
+		<li class="noactive"><a href="/caodang-vn">Cao Đẳng</a></li>
+		<li class="noactive"><a href="/timkiem-vn">Tìm Kiếm</a></li>
+		<li class="noactive"><a href="/tintuyensinh-vn">Tin Tuyển Sinh</a></li>
+		<li class="noactive"><a href="/sukien-vn">Sự Kiện</a></li>
+		<li class="noactive"><a href="/optionlogin">Đăng Nhập</a></li>
+		<li class="noactive"><a href="/home"><img class="quocky" src="https://cdn.duytan.edu.vn/images/icon/vi.png" alt="VN" /></a>
+			<a href="/home-uk"><img class="quocky" src="https://cdn.duytan.edu.vn/images/icon/eng.png" alt="USA" /></a></li>
+	</ul>
+
+	<script>
+		const links = document.querySelectorAll("li a");
+
+		links.forEach(function(link) {
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				links.forEach(function(link) {
+					link.parentElement.classList.remove("active");
+				});
+				this.parentElement.classList.add("active");
+			});
+		});
+	</script>
+</body>
+</html>
